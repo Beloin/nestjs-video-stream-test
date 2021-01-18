@@ -3,13 +3,12 @@ import {
   Get,
   HttpCode,
   HttpStatus,
-  Render,
   Req,
   Res,
 } from '@nestjs/common';
 import { AppService } from './app.service';
 import { Response, Request } from 'express';
-import { createReadStream, readFileSync, readSync, statSync } from 'fs';
+import { createReadStream, readFileSync, statSync } from 'fs';
 import { join } from 'path';
 
 @Controller()
